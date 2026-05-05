@@ -1,16 +1,27 @@
-.loginImage
-  width: 100%
-  height: 100vh
-  object-fit: cover
+.login-image-section
+  position: relative
+  overflow: hidden
+  min-height: 100vh
+
+.imageWrapper
   position: absolute
+  inset: 0
+  overflow: hidden
+
+.loginImage
+  object-fit: cover
+  object-position: center right
+  position: absolute
+  inset: 0
   z-index: -1
-  padding-right: 16px
 
 .pageContainer
   display: flex
   padding: 50px
   flex-direction: column
   height: 100%
+  position: relative
+  z-index: 1
 
 .logoContainer
   display: flex
@@ -26,6 +37,7 @@
 .heroContent
   margin-top: 180px
   margin-left: 100px
+  max-width: 440px
 
 .title
   margin-bottom: 10px
@@ -45,16 +57,94 @@
   justify-content: center
   align-items: center
   height: 100%
+  width: 100%
+
+.login-image-section
+  max-width: 689px
+  width: 100%
+
+.login-form-section
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+
+@media screen and ( max-width: 1199px )
+  .pageContainer
+    padding: 40px
+
+  .heroContent
+    margin-top: 120px
+    margin-left: 60px
 
 @media screen and ( max-width: 991px )
   .login-form-wrapper
     align-items: flex-start
     margin-top: 2rem
     height: auto
+    padding: 20px
   .login-image-section
     display: none
   .login-form-section
     min-height: 100vh
+    display: block
+    padding: 0 20px
+
+  .pageContainer
+    padding: 30px 20px
+
+  .heroContent
+    margin-top: 60px
+    margin-left: 0
+
+  .subtitle
+    font-size: 1.3rem
+    line-height: 1.6
+
+  .title
+    font-size: 2rem
+
+  .loginLogoContainer1
+    margin-top: 1.5rem
+    display: block
+
+  .loginLogoContainer1 img
+    height: 32px
+    width: 92px
+
+  .ec-img-hr
+    display: block
+    border-color: #D0D0D0
+    margin-bottom: 0
+    width: 100vw
+
+@media screen and ( max-width: 991px )
+  .pageContainer
+    padding: 30px 20px
+
+  .heroContent
+    margin-top: 60px
+    margin-left: 0
+
+  .subtitle
+    font-size: 1.3rem
+    line-height: 1.6
+
+  .title
+    font-size: 2rem
+
+  .login-form-wrapper
+    align-items: flex-start
+    margin-top: 2rem
+    height: auto
+    padding: 20px 0
+
+  .login-image-section
+    display: none
+  .login-form-section
+    min-height: 100vh
+    display: block
+    padding: 0 16px
 
   .loginLogoContainer1
     margin-top: 1.5rem

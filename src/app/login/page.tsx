@@ -30,10 +30,12 @@ export default async function Login() {
   return (
     <section style={{ overflowX: 'hidden' }}>
       <div className="row">
-        <div className={`col-sm-12 col-md-12  col-lg-5 col-xl-5 ${styles['login-image-section']}`}
+        <div className={`col-sm-12 col-md-12 col-lg-5 col-xl-5 ${styles['login-image-section']}`}
           style={{ position: 'sticky', top: '0', height: '100vh', background: "radial-gradient(circle at top left, #eef2f7 0%, #d9e3ed 100%)" }}
         >
-          <Image src={LogInPageimage} alt='loginImage' className={styles.loginImage} />
+          <div className={styles.imageWrapper}>
+            <Image src={LogInPageimage} alt='loginImage' fill className={styles.loginImage} />
+          </div>
           <div className={styles.pageContainer}>
             <div className={styles.logoContainer}>
               <div className={styles.logoIcon}>
@@ -80,7 +82,7 @@ export default async function Login() {
 
         </div>
 
-        <div className={`${styles['login-form-section']} col-sm-7 col-md-7  col-lg-7 col-xl-7`}>
+        <div className={`${styles['login-form-section']} col-sm-12 col-md-12 col-lg-7 col-xl-7`}>
           <div className={styles.loginLogoContainer1}>
 
             <div className="ml-4 mb-4 d-flex align-items-center">
