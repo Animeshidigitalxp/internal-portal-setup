@@ -1,0 +1,47 @@
+.container
+  margin-bottom: 3rem
+//   border-bottom: 1px solid #eee
+//   background-color: #fff
+
+.topRow
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 1rem
+
+.title
+
+.downloadBtn
+  background: #EDF2FB
+  color: #0070f3
+  border: none
+  padding: 8px
+  border-radius: 50%
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: background 0.2s
+
+  &:hover
+    background: #e1efff
+
+.statsGrid
+  display: grid
+  grid-template-columns: 1fr
+  gap: 0.5rem
+
+.statItem
+  display: flex
+  gap: 1rem // This controls space between "Customer:" and "Michael Thompson"
+
+@media (min-width: 768px)
+  .statsGrid
+    // Change repeat(2, 1fr) to auto/max-content
+    grid-template-columns: max-content max-content 
+    column-gap: 15rem   // Adjust this to set the horizontal gap between the two columns
+    row-gap: 0.25rem
+
+@media (min-width: 1024px)
+    // Optional: for very wide screens, you could force a single line
+    // but the 2x2 grid usually matches the "Full Chat" look best.

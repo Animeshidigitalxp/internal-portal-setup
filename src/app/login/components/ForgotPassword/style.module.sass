@@ -1,0 +1,88 @@
+.enter-otp-forget-password1
+    display: flex
+    // justify-content: space-between
+    align-items: center
+    width: 465px
+    position: relative
+
+.crossTick-forget-password1
+    width: 30px
+    height: 30px
+    object-fit: cover
+    margin-left: 15px
+
+.allow-color
+    color: #0033AB !important
+    text-decoration: underline
+
+.donotallow-color
+    color: #707070 !important
+
+.forgot-button
+    &:hover
+        text-decoration: underline
+
+.togglePassword
+    position: absolute
+    right: 1.5rem
+    top: 50%
+    transform: translateY(-50%)
+    background: none
+    border: none
+    color: #5F5F5F
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+
+.togglePassword:hover
+    color: #333
+
+.button-container
+    column-gap: 1.2rem
+
+.options
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    margin-top: -0.5rem
+
+    & button:hover
+        text-decoration: underline
+
+@media screen and ( max-width: 1400px )
+
+    .enter-otp-forget-password1
+        width: 100%
+
+@media screen and ( max-width: 992px )
+
+    .enter-otp-forget-password1
+        width: 100%
+
+@media screen and ( max-width: 576px )
+    .crossTick-forget-password1
+        height: 27px
+        width: 27px
+
+@media screen and ( max-width: 500px )
+
+    .crossTick-forget-password1
+        height: 25px
+        width: 25px
+
+@media screen and ( max-width: 440px )
+
+    .crossTick-forget-password1
+        height: 23px
+        width: 23px
+
+@media screen and ( max-width: 360px )
+    .crossTick-forget-password1
+        margin-left: .8rem
+
+@media screen and ( max-width: 350px )
+
+    .crossTick-forget-password1
+        height: 20px
+        width: 20px

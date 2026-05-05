@@ -1,0 +1,83 @@
+.grid 
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr))
+  gap: 14px
+  margin-bottom: 14px
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 24px
+
+.titleArea
+  display: flex
+  flex-direction: column
+  gap: 4px
+
+.dropdownContainer 
+  position: relative
+  display: inline-flex
+  align-items: center
+  max-width: 280px
+  width: 100%
+
+
+.dropdown 
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  border: 1px solid #e5e7eb
+  border-radius: 8px // pill shape
+  
+  padding: 10px 40px 10px 16px
+  width: 100%
+
+  font-size: 16px
+  color: #6b7280
+
+  cursor: pointer
+  outline: none
+
+  transition: all 0.2s ease
+
+  &:hover 
+    border-color: #d1d5db
+    background-color: #f3f4f6
+  
+
+  &:focus 
+    border-color: #cbd5e1
+    box-shadow: 0 0 0 2px rgba(203, 213, 225, 0.5)
+  
+
+
+.icon 
+  position: absolute
+  right: 14px
+  pointer-events: none // click goes through to select
+
+  display: flex
+  align-items: center
+
+.main 
+  margin-bottom: 16px
+//   padding: 32px
+//   background-color: #0d0f12
+//   min-height: 100vh
+
+ 
+.tablegrid 
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 16px
+ 
+  @media (max-width: 900px) 
+    grid-template-columns: 1fr
+  
+
+
+@media (max-width: 600px) 
+  .grid 
+    gap: 8px !important
+    margin-bottom: 8px

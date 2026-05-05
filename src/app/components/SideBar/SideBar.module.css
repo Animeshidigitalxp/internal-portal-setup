@@ -1,0 +1,152 @@
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 240px;
+    background-color: white;
+    border-right: 1px solid #D0D0D0;
+    z-index: 100;
+    margin-top: 6.4rem;
+    padding-top: 3rem;
+    margin-left: 0 !important;
+    transition: width 0.3s ease;
+    padding-left: 3px;
+    
+  }
+
+.sidebarItemName {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  
+  .sidebarItem {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #6A6A6A;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 0px;
+  }
+  
+  .sidebarItem:hover {
+    background-color: #edf2fb;
+  }
+
+  .sidebarItem:hover span:nth-of-type(2){
+    color: #20242F !important;
+  }
+
+  .sidebarItem:hover svg{
+    color: #20242F !important;
+  }
+
+  .sidebarItem:hover img{
+    filter: brightness(0) invert(0);
+  }
+  
+  .sidebarItem svg {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .active {
+    color: #1275B3  !important;
+    background-color: #edf2fb;
+    font-weight: 500;
+    border-left: 3px solid #1275B3;
+    padding-left: 3px;
+  }
+  
+  .active svg {
+    color: #1275B3 !important;
+  }
+  
+  .dropdownWrapper {
+    overflow: hidden;
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdownItem {
+    padding: 6px 5px 6px 41px;
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #F5F5F5;
+    color: #20242F !important;
+
+  }
+  
+  .active.dropdownItem {
+    background-color: #FFF6F6;
+  }
+  
+  .chevron {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+    margin-right: 0 !important;
+  }
+  
+  .rotated {
+    transform: rotate(180deg);
+  }
+  
+  .divider {
+    height: 1px;
+    margin: 8px 16px;
+    background: #f0f0f0;
+    border-top: 1px dashed #e0e0e0;
+  }
+
+.selectedDropdown{
+    color:#FF5A8C;
+}
+
+.iconsdiv{
+  display: flex;
+  align-items: center;   
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.2rem;
+  margin-left: 0.6rem;
+}
+.iconsdiv img {
+  width: 16px;
+  height: 16px;
+}
+
+.iconActive{
+  background: #1275B3;
+  border-radius: 5px;
+}
+
+
+
+.iconActive img {
+  filter: brightness(0) invert(1);
+}
+
+
+@media(max-width: 1024px){
+  .sidebar {
+     width: 0;
+     border-right: 0
+  }
+  
+}

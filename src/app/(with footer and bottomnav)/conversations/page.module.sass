@@ -1,0 +1,40 @@
+
+.converstion-table-card
+    display: none
+
+.mobile-sort-filters
+  display: none
+
+.search-filter
+    width: 31%
+    margin-top: .8rem
+    margin-left: 1rem
+
+.last-message
+    white-space: pre-wrap !important
+    line-height: 1.2
+@media screen and (max-width: 992px)
+    .converstion-table
+        display: none
+    .converstion-table-card
+        display: block
+
+@media screen and ( max-width: 660px )
+    .mobile-sort-filters
+        display: flex
+        gap: 1rem
+        align-items: flex-end
+    .mobile-filter
+        width: 3.3rem
+        height: 3.3rem
+        background-color: #EDF2FB
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+    .sort-and-filters
+        display: none !important
+    .search-filter
+        margin-left: 0
+        width: max-content
+    

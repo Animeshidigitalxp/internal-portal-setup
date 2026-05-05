@@ -1,0 +1,127 @@
+
+.wrapper
+  border: 1px solid #E3E3E3
+  border-radius: 12px
+  overflow: hidden
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif
+  width: 100%
+  padding: 16px 30px 12px
+
+.heading
+  font-size: 14px
+  font-weight: 400
+  color: #000000
+
+// ── Header row (View all) ─────────────────────────────────────
+.header
+  display: flex
+  justify-content: space-between
+  padding-bottom: 16px
+//   padding: 16px 30px 12px
+
+.viewAll
+  font-size: 14px
+  font-weight: 400
+  color: #1859CF
+  text-decoration: none
+  letter-spacing: 0.01em
+  transition: color 0.15s ease
+  cursor: pointer
+
+  &:hover
+    color: #1859CF
+    text-decoration: underline
+
+// ── Scroll container ──────────────────────────────────────────
+.tableScroll
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+// ── Table base ────────────────────────────────────────────────
+.table
+  width: 100%
+  border-collapse: collapse
+  font-size: 12.5px
+  color: #d1d5db
+
+.thead
+  padding-bottom: 16px
+// ── Header cells ─────────────────────────────────────────────
+.th
+  padding: 8px 0 // Added 16px to the bottom padding font-size: 14px
+  font-weight: 400
+  color: #5B5B5B
+  letter-spacing: 0.03em
+  text-transform: none
+  white-space: nowrap
+  border-bottom: 1px solid #E3E3E3
+//   background-color: #111214
+
+// ── Body rows ─────────────────────────────────────────────────
+.tr
+  transition: background-color 0.12s ease
+
+  &:first-child
+    padding-top: 16px
+
+  &:last-child
+    border-bottom: none
+
+  &:hover
+//     background-color: #16191f
+
+.td
+  padding: 4px 0
+  white-space: nowrap
+  color: #5B5B5B
+  vertical-align: middle
+  font-size: 14px
+  font-weight: 400
+
+  // &:first-child 
+  //   padding-top: 16px
+
+.empty
+  color: #3d424f
+
+// ── Status badge ─────────────────────────────────────────────
+.badge
+  display: inline-block
+  padding: 2px 8px
+  font-size: 14px
+  font-weight: 400
+  letter-spacing: 0.02em
+
+  &[data-status="active"]
+    color: #34d399
+//     background-color: rgba(52, 211, 153, 0.12)
+
+  &[data-status="idle"]
+    color: #6b7280
+//     background-color: rgba(107, 114, 128, 0.12)
+
+  &[data-status="pending"]
+    color: #fbbf24
+//     background-color: rgba(251, 191, 36, 0.12)
+
+  &[data-status="inactive"]
+    color: #f87171
+//     background-color: rgba(248, 113, 113, 0.12)
+
+// ── Score chip ────────────────────────────────────────────────
+.score
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: 22px
+  height: 22px
+  font-size: 14px
+  font-weight: 500
+  // color: #facc15
+  // background-color: rgba(250, 204, 21, 0.1)
+
+// ── Responsive ────────────────────────────────────────────────
+@media (max-width: 640px)
+  .th,
+  .td
+    padding: 8px 10px

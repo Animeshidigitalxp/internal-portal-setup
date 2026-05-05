@@ -1,0 +1,142 @@
+// Transcript.module.scss
+
+.wrapper 
+  width: 100%
+  padding: 0
+
+
+// ── Title ──────────────────────────────────────────────────────────
+.title 
+  letter-spacing: -0.01em
+  margin: 0 0 1.25rem 0
+  padding-bottom: 0.75rem
+
+
+// ── Message list ───────────────────────────────────────────────────
+.messageList 
+  display: flex
+  flex-direction: column
+  gap: 0
+
+
+// ── Single message block ───────────────────────────────────────────
+.message 
+  padding: 0.85rem 0
+  border-bottom: 1px solid var(--border-color)
+
+  &:last-child 
+    border-bottom: none
+  
+
+
+// ── Header row (name + timestamp) ─────────────────────────────────
+.header 
+  display: flex
+  align-items: baseline
+  gap: 0.5rem
+  margin-bottom: 0.3rem
+
+
+.senderName 
+  line-height: 1.2
+
+  .message[data-role="ASSISTANT"] & 
+    color: #1275B3
+  
+
+  .message[data-role="USER"] & 
+    color: #2D2D2D
+  
+
+
+.timestamp 
+  
+.eventStru
+  display: flex
+  flex-direction: column
+  gap: 0.3rem
+  margin-bottom: 16px
+
+// ── Message content ────────────────────────────────────────────────
+.content 
+  line-height: 1.55
+  margin: 0
+
+
+// ── Options list ───────────────────────────────────────────────────
+.options 
+  margin-top: 0.45rem
+  font-size: 0.875rem
+  color: var(--options-text)
+  display: flex
+  flex-wrap: wrap
+  gap: 0.3rem 0.5rem
+  align-items: baseline
+
+
+.optionsLabel 
+
+  white-space: nowrap
+
+
+.optionItem 
+  display: inline-flex
+  align-items: center
+  gap: 0.25rem
+
+  &::before 
+    content: '•'
+   
+
+  // Remove bullet for the first item after the label
+  &:first-of-type::before 
+    content: none
+  
+
+.summaryTile
+  background-color: #f0f7ff // Light blue background from your image
+  border-radius: 8px
+  padding: 1rem
+  margin: 1rem 0
+  border: 1px solid #e0eeff
+
+.summaryTitle
+  margin-bottom: 1rem
+
+.summaryList
+  list-style: none
+  padding: 0
+  display: flex
+  flex-direction: column
+  gap: 0.4rem
+
+.summaryItem
+  display: flex
+  line-height: 1.4
+  gap: 0.5rem
+
+.summaryLabel
+  flex-shrink: 0
+
+.summaryValue
+
+
+.summaryFooter
+  font-size: 14px
+  font-style: italic
+  color: #1275B3 // Matches your ai-color
+  line-height: 1.5
+  padding-top: 1rem
+  margin: 0
+
+// ── Responsive ────────────────────────────────────────────────────
+@media (max-width: 480px) 
+  .wrapper 
+    padding: 0
+  
+
+  .title 
+  
+
+  .content 
+  

@@ -1,0 +1,85 @@
+.table-input
+  border: none !important
+  font-family: inherit
+  font-weight: inherit
+  font-size: inherit
+  color: inherit
+  &:disabled
+    background-color: #f7f7f9
+    cursor: not-allowed
+
+.placeholder-input
+  &::placeholder
+    text-align: left
+
+.pt-02
+  padding-top: 0.2rem
+
+.table-input-drop
+  border: none !important
+  font-family: inherit
+  font-weight: inherit
+  font-size: inherit
+  &:disabled
+    background-color: #f7f7f9
+    cursor: not-allowed
+/* stylelint-disable */
+.table-input-textarea
+  field-sizing: content !important
+/* stylelint-disable */
+
+.custom-date-input-label
+  position: absolute
+  top: 43%
+  left: 0px
+  right: 0
+  bottom: 0
+  padding: .375rem .75rem
+  pointer-events: none
+  font-family: inherit
+  font-size: 14px
+  background-color: transparent
+  transform: translateY(-50%)
+  padding-left: 0
+  padding-right: 0
+
+
+.dropdown-left
+  text-align: left
+
+.dropdown-right
+  text-align: left
+
+
+.label-date-input
+  // position: relative
+  background-color: transparent
+  color: transparent
+  font-size: 14px
+  caret-color: transparent
+  &:disabled
+    background-color: #F7F7F9
+    color: transparent !important
+
+  &::-webkit-datetime-edit
+    color: transparent
+    opacity: 0
+
+  &::-webkit-datetime-edit-text
+    color: transparent
+    opacity: 0
+
+  &::-webkit-datetime-edit-month-field
+    color: transparent
+    opacity: 0
+
+  &::-webkit-datetime-edit-day-field
+    color: transparent
+    opacity: 0
+
+  &::-webkit-datetime-edit-year-field
+    color: transparent
+    opacity: 0
+
+  &::-webkit-calendar-picker-indicator
+    opacity: 1

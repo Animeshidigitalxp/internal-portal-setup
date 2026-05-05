@@ -1,0 +1,56 @@
+
+.breadcrumbBar
+  display: flex
+  align-items: center
+  gap: 6px
+  padding: 6px 30px
+  line-height: 34px
+  background-color: #EFF2EF
+  font-size: 12px
+  width: 100%
+  overflow-x: auto // ✅ enable horizontal scroll
+  white-space: nowrap // ✅ prevent text breaking
+
+  &::-webkit-scrollbar
+    display: none
+  // scrollbar-width: none    // optional: hide scrollbar (Firefox)
+
+  // &::-webkit-scrollbar     // optional: hide scrollbar (Chrome/Safari)
+  //   display: none
+
+.breadcrumbItem
+  display: inline-flex
+  align-items: center
+  gap: 6px
+  flex-shrink: 0 // ✅ prevents shrinking
+
+// .breadcrumbItem
+//   display: inline-flex
+//   align-items: center
+//   gap: 6px
+
+.breadcrumbLink
+  color: #2D2D2D
+  font-weight: 400
+  font-size: 1.4rem
+  // text-decoration: none
+
+  // &:hover
+  //   text-decoration: underline
+
+.breadcrumbText
+  color: #1275B3
+  font-weight: 400
+
+.breadcrumbCurrent
+  font-weight: 400
+  color: #5B5B5B
+  font-size: 1.4rem
+
+.breadcrumbSeparator
+  color: #5B5B5B
+  font-size: 1.4rem
+
+@media (max-width: 768px)
+  .breadcrumbBar
+    padding: 6px 12px

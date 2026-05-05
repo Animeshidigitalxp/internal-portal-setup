@@ -1,0 +1,30 @@
+@use '../../../../styles/_styleguide' as *;
+
+
+.margin-top
+    margin-top: 3rem
+    
+.page-container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 90vh
+    h1
+        margin-bottom: 5.8rem
+
+@media (max-width: 660px)
+    .page-container
+        padding: 0 1rem
+        h1
+            margin-bottom: 3rem
+    .inter_semibold_gray_50px
+        font-size: 2.4rem
+
+    .inter_regular_grey_22px
+        font-size: 1.8rem
+        text-align: center
+        line-height: 2.4rem
+
+    .margin-top
+        margin-top: 1rem
