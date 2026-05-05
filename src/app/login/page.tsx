@@ -24,12 +24,12 @@ export default async function Login() {
                 {logoSvgData}
 
               </div>
-              <span className={styles.logoText}>Ginger AI</span>
+              <span className={styles.logoText}>Mini Marty AI</span>
             </div>
 
             <div className={styles.heroContent}>
 
-              <h1 className={styles.title}>Welcome to Ginger AI</h1>
+              <h1 className={styles.title}>Welcome to Mini Marty AI</h1>
               <p className={styles.subtitle}>
                 Sign in to manage your AI assistant, conversations, <br></br> and intelligence settings.
               </p>
@@ -69,7 +69,7 @@ export default async function Login() {
             <div className="ml-4 mb-4 d-flex align-items-center">
               {logoSvgData}
 
-              <span className={`ml-3 ${styles.logoText}`}>Ginger AI</span>
+              <span className={`ml-3 ${styles.logoText}`}>Mini Marty AI</span>
             </div>
             <hr className={`${styles['ec-img-hr']}`} />
 
