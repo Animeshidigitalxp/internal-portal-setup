@@ -13,7 +13,7 @@ import { validatePassword } from '@/src/helpers/helper'
 import { Modal } from 'react-bootstrap'
 import PassChangeSuccessModal from '@/src/app/components/common/Modal/PassChangeSuccessModal/PassChangeSuccessModal'
 import { useRouter } from 'next/navigation'
-import { forgotPassword, sendForgotPasswordCode } from '@/src/app/cognitoActions/actions'
+import { forgotPassword, sendForgotPasswordCode } from '@/src/app/azureActions/actions'
 import ErrorMessageDisplay from '@/src/app/components/common/ErrorMessageDisplay/ErrorMessageDisplay'
 
 
