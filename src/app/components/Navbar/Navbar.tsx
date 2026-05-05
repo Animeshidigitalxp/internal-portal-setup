@@ -13,7 +13,7 @@ import profileImg from '../SideBar/svg/profileImg.png'
 import { setFullPageLoader } from '../FullPageLoader/reducer/fullPageLoaderSlice';
 import { BiSolidBell } from "react-icons/bi";
 import { BsPersonCircle } from "react-icons/bs";
-
+import minimarty from './svg/minimarty.svg'
 
 type NavbarProps = {
   currentUser: any;
@@ -67,11 +67,12 @@ const Navbar = (props: NavbarProps) => {
 
 
           <a href="/" className={styles.logo}>
-            {/* <img className={`align-top ${styles.mobile} ${styles.brandLogoImgIcon}`} alt="brand logo"
-              src={logoIcon.src} />
-            <img className={`align-top ${styles.desktop} ${styles.brandLogoImg}`} alt="brand logo"
-              src={logo.src} /> */}
-            Ginger AI - Internal Portal
+             <img className={` mr-3 ${styles.mobile} ${styles.brandLogoImgIcon}`} alt="brand logo"
+              src={minimarty.src} />
+            {/* <img className={`align-top ${styles.desktop} ${styles.brandLogoImg}`} alt="brand logo"
+              src={minimarty.src} />  */}
+              {/* {minimarty.src} */}
+            Mini Marty
           </a>
         </div>
 

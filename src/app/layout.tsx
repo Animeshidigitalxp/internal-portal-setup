@@ -20,8 +20,8 @@ import FullPageLoader from "./components/FullPageLoader/FullPageLoader";
 // });
 
 export const metadata: Metadata = {
-  title: "Ginger",
-  description: "Ginger",
+  title: "Mini Marty",
+  description: "Mini Marty",
 };
 
 export const viewport: Viewport = {
