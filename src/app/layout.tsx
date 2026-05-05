@@ -6,7 +6,7 @@ import type { Metadata, Viewport } from "next";
 // import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import FullPageLoader from "./components/FullPageLoader/FullPageLoader";
-import ConfigureAmplify from "./ConfigureAmplify";
+// import ConfigureAmplify from "./ConfigureAmplify";
 // import MicrosoftClarity from "./components/Clarity/MicrosoftClarity";
 
 // const geistSans = Geist({
@@ -44,13 +44,13 @@ export default function RootLayout({
         //   antialiased`}
         className="antialiased"
       >
-        <ConfigureAmplify>
+        {/* <ConfigureAmplify> */}
         <StoreProvider>
           <FullPageLoader />
           {children}
           {/* <MicrosoftClarity /> */}
         </StoreProvider>
-        </ConfigureAmplify>
+        {/* </ConfigureAmplify> */}
         {/* <script
           src="https://dk010ec1xodxm.cloudfront.net/ginger-widget.js"
           data-dealer="sunrise-marine"
