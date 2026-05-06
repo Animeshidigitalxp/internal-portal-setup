@@ -2,7 +2,7 @@
 import React, { useActionState, useState } from 'react'
 import styles from './styles.module.css'
 import { AiFillEyeInvisible, AiFillEye } from 'react-icons/ai';
-import { handleSignIn, sendForgotPasswordCode } from '@/src/app/cognitoActions/actions';
+import { handleSignIn, sendForgotPasswordCode } from '@/src/app/azureActions/actions';
 import { useFormStatus } from 'react-dom'
 import ErrorMessageDisplay from '@/src/app/components/common/ErrorMessageDisplay/ErrorMessageDisplay';
 import { ClipLoader } from 'react-spinners';
@@ -14,8 +14,8 @@ const LoginForm = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [state, loginAction] = useActionState(
-    (prevprevState: object | undefined, formData: FormData) => handleSignIn(formData), // Action function
-    { email: '', error: undefined } // Initial state
+    (_prevState: object | undefined, formData: FormData) => handleSignIn(formData),
+    { email: false, error: undefined }
   );
 
   const [editProfile, setEditProfile] = useState(false)
@@ -30,20 +30,17 @@ const LoginForm = () => {
   }
 
 
-  const handleForgotclick = async (email: any) => {
+  const handleForgotclick = async (email: string) => {
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+      setShowResetError('Please enter your email address before resetting your password.')
+      return
+    }
     setEditProfile(true)
-    // setLoginData({
-    //   CurrentPassword: '',
-    //   NewPassword: '',
-    //   ConfirmPassword: ''
-    // })
     setShowResetError('')
-
     const res = await sendForgotPasswordCode(email)
     if (res.Status !== 200) {
       setShowResetError(res.Message)
     }
-    console.log('reset', res)
   }
 
 
@@ -113,12 +110,18 @@ const LoginForm = () => {
           </div>
 
           <div className={styles.options}>
-
-            {/* <a href="#" className={styles.forgotPassword}>
-              Forgot Password?
-            </a> */}
-            {state.error && <button type={'button'} className={`inter_regular_diffBlack_14px border-0 bg-transparent mt-2 `} onClick={() => handleForgotclick(email)}>Forgot password?</button>}
+            <button
+              type="button"
+              className={`inter_regular_diffBlack_14px border-0 bg-transparent mt-2`}
+              onClick={() => handleForgotclick(email)}
+            >
+              Forgot password?
+            </button>
           </div>
+
+          {showResetError && (
+            <ErrorMessageDisplay message={showResetError} className='' />
+          )}
 
           <div>
             <SubmitButton />

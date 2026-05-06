@@ -1,0 +1,25 @@
+.dashboard
+  display: flex
+  flex-direction: column
+  gap: 16px
+  padding: 0 1.5rem 2rem
+
+// ── Full-width rows ────────────────────────────────────────────
+.fullRow
+  width: 100%
+
+// ── Bottom two-column row ──────────────────────────────────────
+.bottomRow
+  display: grid
+  grid-template-columns: 1fr 380px
+  gap: 16px
+  align-items: start
+
+// ── Responsive ────────────────────────────────────────────────
+@media (max-width: 1024px)
+  .bottomRow
+    grid-template-columns: 1fr 320px
+
+@media (max-width: 768px)
+  .bottomRow
+    grid-template-columns: 1fr
