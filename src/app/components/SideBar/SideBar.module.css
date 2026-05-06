@@ -37,7 +37,7 @@
   }
   
   .sidebarItem:hover {
-    background-color: #edf2fb;
+    background-color: #EBF9F5;
   }
 
   .sidebarItem:hover span:nth-of-type(2){
@@ -59,15 +59,15 @@
   }
   
   .active {
-    color: #1275B3  !important;
-    background-color: #edf2fb;
+    color: #31BA9C  !important;
+    background-color: #EBF9F5;
     font-weight: 500;
-    border-left: 3px solid #1275B3;
+    border-left: 3px solid #31BA9C;
     padding-left: 3px;
   }
   
   .active svg {
-    color: #1275B3 !important;
+    color: #31BA9C !important;
   }
   
   .dropdownWrapper {
@@ -132,7 +132,7 @@
 }
 
 .iconActive{
-  background: #1275B3;
+  background: #31BA9C;
   border-radius: 5px;
 }
 

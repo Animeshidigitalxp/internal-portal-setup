@@ -72,7 +72,8 @@ const Navbar = (props: NavbarProps) => {
             {/* <img className={`align-top ${styles.desktop} ${styles.brandLogoImg}`} alt="brand logo"
               src={minimarty.src} />  */}
               {/* {minimarty.src} */}
-            Mini Marty
+              <span className='exo_semibold_blue_16px'>Mini Marty</span>
+            {/* Mini Marty */}
           </a>
         </div>
 

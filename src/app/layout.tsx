@@ -2,22 +2,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import '../styles/globals.css';
 import '../styles/_styleguide.sass';
 import type { Metadata, Viewport } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-// import "./globals.css";
+import { Exo } from "next/font/google";
 import StoreProvider from "./StoreProvider";
 import FullPageLoader from "./components/FullPageLoader/FullPageLoader";
 // import ConfigureAmplify from "./ConfigureAmplify";
 // import MicrosoftClarity from "./components/Clarity/MicrosoftClarity";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const exo = Exo({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  variable: "--font-exo",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Mini Marty",
@@ -37,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={exo.variable}>
       <body
         // className={`
         //    ${geistSans.variable} ${geistMono.variable}
