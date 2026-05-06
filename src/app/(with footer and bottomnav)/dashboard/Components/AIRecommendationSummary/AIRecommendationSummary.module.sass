@@ -1,0 +1,77 @@
+$teal: #31BA9B
+$border: #E8E8E8
+$track: #EDEDED
+
+.container
+  background: #ffffff
+  border: 1px solid $border
+  border-radius: 8px
+  padding: 16px
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif
+  display: flex
+  flex-direction: column
+  gap: 0
+
+// ── Title ─────────────────────────────────────────────────────
+.title
+  margin: 0 0 14px 0
+
+// ── Total row ─────────────────────────────────────────────────
+.totalRow
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 4px 0
+
+.totalValue
+  letter-spacing: -0.02em
+
+// ── Divider ───────────────────────────────────────────────────
+.divider
+  height: 1px
+  background: $border
+  margin: 14px 0
+
+// ── Bar row ───────────────────────────────────────────────────
+.barRow
+  display: flex
+  flex-direction: column
+  gap: 8px
+
+.rowHeader
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.label
+  // inherits from global class
+
+.value
+  // inherits from global class
+
+// ── Progress bar ──────────────────────────────────────────────
+.track
+  width: 100%
+  height: 6px
+  background: $track
+  border-radius: 999px
+  overflow: hidden
+
+.fill
+  height: 100%
+  background: $teal
+  border-radius: 999px
+  transition: width 0.4s ease
+
+// ── Accuracy row ──────────────────────────────────────────────
+.accuracyRow
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 4px 0
+
+.accuracyLabel
+  // inherits from global class
+
+.accuracyValue
+  color: $teal !important

@@ -1,0 +1,88 @@
+.container
+  background: #ffffff
+  border: 1px solid #E3E3E3
+  border-radius: 8px
+  overflow: hidden
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif
+  width: 100%
+
+// ── Table header section ───────────────────────────────────────
+.tableHeader
+  background: #31BA9B1A
+  padding: 16px
+
+.title
+  margin: 0 0 6px 0
+
+.subtitle
+  margin: 0
+
+// ── Scroll container ──────────────────────────────────────────
+.tableScroll
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+
+// ── Table base ────────────────────────────────────────────────
+.table
+  width: 100%
+  border-collapse: collapse
+  font-size: 14px
+
+// ── Header cells ─────────────────────────────────────────────
+.th
+  padding: 10px 16px
+  white-space: nowrap
+  border-bottom: 1px solid #E3E3E3
+  background: #31BA9B1A
+  border-top: 1px solid #E3E3E3
+
+// ── Body rows ─────────────────────────────────────────────────
+.tr
+  transition: background 0.1s ease
+  &:not(:last-child)
+    border-bottom: 1px solid #F0F0F0
+  &:hover
+    background: #F9FAFB
+
+.td
+  padding: 11px 16px
+  white-space: nowrap
+  vertical-align: middle
+
+.empty
+  color: #9ca3af
+
+// ── Status badge ─────────────────────────────────────────────
+.badge
+  display: inline-block
+  padding: 3px 12px
+  border-radius: 4px
+  font-size: 12.5px
+  font-weight: 500
+
+  &[data-status="new"]
+    color: #0ea5e9
+    background: rgba(14, 165, 233, 0.1)
+
+  &[data-status="pending"]
+    color: #f59e0b
+    background: rgba(245, 158, 11, 0.1)
+
+  &[data-status="approved"]
+    color: #10b981
+    background: rgba(16, 185, 129, 0.12)
+
+  &[data-status="delivered"]
+    color: #5B5B5B
+
+  &[data-status="in-transit"]
+    color: #0ea5e9
+
+  &[data-status="processing"]
+    color: #8b5cf6
+
+// ── Responsive ────────────────────────────────────────────────
+@media (max-width: 640px)
+  .th,
+  .td
+    padding: 8px 12px
