@@ -57,21 +57,21 @@ export default function AIRecommendationSummary({
         </span>
       </div>
 
-      <div className={styles.divider} />
+      {/* <div className={styles.divider} /> */}
 
       <BarRow label="Accepted" value={accepted} percent={acceptedPct} />
 
-      <div className={styles.divider} />
+      {/* <div className={styles.divider} /> */}
 
       <BarRow label="Rejected" value={rejected} percent={rejectedPct} />
 
       <div className={styles.divider} />
 
       <div className={styles.accuracyRow}>
-        <span className={`${styles.accuracyLabel} inter_regular_grey_13px`}>
+        <span className={`${styles.accuracyLabel} inter_regular_lightgrey_12px`}>
           Accuracy Rate
         </span>
-        <span className={`${styles.accuracyValue} inter_semibold_black_13px`}>
+        <span className={`${styles.accuracyValue} inter_semibold_lightgrey_16px`}>
           {accuracyRate}%
         </span>
       </div>

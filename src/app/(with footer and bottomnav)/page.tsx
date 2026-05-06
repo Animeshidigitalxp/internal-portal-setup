@@ -22,6 +22,7 @@ export default function Home() {
       <ResetFullPageLoader />
 
       <div className={styles.dashboard}>
+        <h2  className='inter_regular_grey_12px'>Real-time performance overview</h2>
 
         {/* Row 1 — Stat cards */}
         <div className={styles.fullRow}>
