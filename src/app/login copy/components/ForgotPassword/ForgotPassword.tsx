@@ -13,7 +13,7 @@ import { validatePassword } from '@/src/helpers/helper'
 import { Modal } from 'react-bootstrap'
 import PassChangeSuccessModal from '@/src/app/components/common/Modal/PassChangeSuccessModal/PassChangeSuccessModal'
 import { useRouter } from 'next/navigation'
-import { forgotPassword, sendForgotPasswordCode } from '@/src/app/cognitoActions/actions'
+import { forgotPassword, sendForgotPasswordCode } from '@/src/app/azureActions/actions'
 import ErrorMessageDisplay from '@/src/app/components/common/ErrorMessageDisplay/ErrorMessageDisplay'
 
 
@@ -70,16 +70,11 @@ const ForgotPassword = (props: ForgotPasswordProps) => {
     const handleResetPass = async() => {
         setShowLoad(true)
         const res = await forgotPassword(emailAdd, code, passwordData.NewPassword)
-        console.log('reset', res)
         if(res.Status === 200){
             setOtpVerfied(true)
             setShowError(false)
             setShowResetError('')
-            setPasswordData({
-                NewPassword: '',
-                ConfirmPassword: ''
-            })
-            // handleCloseEdit()
+            setPasswordData({ NewPassword: '', ConfirmPassword: '' })
             setShowLoad(false)
             setShowLogoutPop(true)
         } else {
@@ -90,15 +85,16 @@ const ForgotPassword = (props: ForgotPasswordProps) => {
             setShowLogoutPop(false)
         }
     }
+
     const handleResendCode = async() => {
         setPending(true)
         const res = await sendForgotPasswordCode(emailAdd)
-        if(res.Status !==200) {
+        if(res.Status !== 200) {
             setShowResetError(res.Message)
         }
         setTimeout(()=>{
             setPending(false)
-        },6000)
+        }, 6000)
     }
 
     useEffect(()=> {
