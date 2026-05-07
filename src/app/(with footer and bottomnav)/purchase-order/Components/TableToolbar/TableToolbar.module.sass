@@ -1,0 +1,73 @@
+.container 
+  display: flex
+  align-items: center
+  gap: 12px
+  width: 100%
+  font-family: system-ui, -apple-system, sans-serif
+
+
+.searchWrapper 
+  position: relative
+  flex: 1
+
+  .searchIcon 
+    position: absolute
+    left: 12px
+    top: 50%
+    transform: translateY(-50%)
+    color: #888
+    pointer-events: none
+  
+
+  .searchInput 
+    width: 60%
+    padding: 10px 10px 10px 40px
+    border: 1px solid #e0e0e0
+    border-radius: 8px
+    font-size: 14px
+    outline: none
+    transition: border-color 0.2s
+
+    &:focus 
+      border-color: #00a181
+    
+
+    &::placeholder 
+      color: #999
+    
+  
+
+
+.sortSelect 
+  padding: 10px 12px
+  border: 1px solid #e0e0e0
+  border-radius: 8px
+  background-color: #fff
+  font-size: 14px
+  color: #555
+  cursor: pointer
+  min-width: 180px
+  outline: none
+
+  &:focus 
+    border-color: #00a181
+  
+
+
+.filterBtn 
+  display: flex
+  align-items: center
+  gap: 6px
+  padding: 10px 16px
+  background: transparent
+  border: 1px dashed #00a181
+  border-radius: 8px
+  color: #00a181
+  font-weight: 500
+  font-size: 14px
+  cursor: pointer
+  transition: background 0.2s
+
+  &:hover 
+    background-color: rgba(0, 161, 129, 0.05)
+  

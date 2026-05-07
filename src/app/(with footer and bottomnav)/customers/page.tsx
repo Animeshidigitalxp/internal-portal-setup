@@ -1,10 +1,15 @@
-import React from 'react'
 import ResetFullPageLoader from '../../components/FullPageLoader/ResetFullPageLoader'
+import Section from '../../components/common/Section/Section';
+import CustomerWrapper from './CustomerWrapper';
 
 function page() {
   return (
-    <div> <ResetFullPageLoader /></div>
-  )
+    <Section heading="Customers">
+      <ResetFullPageLoader />
+      <CustomerWrapper />
+      
+    </Section>
+  );
 }
 
 export default page

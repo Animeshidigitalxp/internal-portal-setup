@@ -14,7 +14,7 @@ export type ColumnDef<T> = {
 };
 
 export type DashboardTableProps<T extends Record<string, unknown>> = {
-  title: string;
+  title?: string;
   subtitle?: string;
   columns: ColumnDef<T>[];
   rows: T[];
@@ -43,10 +43,12 @@ function DashboardTable<T extends Record<string, unknown>>({
 }: DashboardTableProps<T>) {
   return (
     <div className={`${styles.container} ${className ?? ""}`}>
-      <div className={styles.tableHeader}>
-        <h2 className={`${styles.title} inter_regular_black_15px`}>{title}</h2>
-        {subtitle && <p className={`${styles.subtitle} inter_regular_grey_12px`}>{subtitle}</p>}
-      </div>
+      {(title || subtitle) && (
+        <div className={styles.tableHeader}>
+          <h2 className={`${styles.title} inter_regular_black_15px`}>{title}</h2>
+          {subtitle && <p className={`${styles.subtitle} inter_regular_grey_12px`}>{subtitle}</p>}
+        </div>
+      )}
 
       <div className={styles.tableScroll}>
         <table className={styles.table}>
@@ -55,7 +57,7 @@ function DashboardTable<T extends Record<string, unknown>>({
               {columns.map((col) => (
                 <th
                   key={String(col.key)}
-                  className={`${styles.th} inter_regular_grey_12px`}
+                  className={`${styles.th} inter_regular_black_13px`}
                   style={{ textAlign: col.align ?? "left", width: col.width }}
                 >
                   {col.header}

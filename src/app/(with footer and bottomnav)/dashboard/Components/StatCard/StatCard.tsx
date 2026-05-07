@@ -4,7 +4,7 @@ import styles from './StatCard.module.sass';
 interface StatCardProps {
   title: string;
   value: string | number;
-  trend: string;
+  trend: React.ReactNode;
   icon: React.ReactNode;
 }
 
