@@ -38,8 +38,8 @@ function ComponentWrapper() {
       trend: (
         <>
           <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.0833 3.20825L6.18746 7.10409L3.89579 4.81242L0.916626 7.79159" stroke="#31BA9C" strokeWidth="0.916667" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M7.33337 3.20825H10.0834V5.95825" stroke="#31BA9C" strokeWidth="0.916667" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.0833 3.20825L6.18746 7.10409L3.89579 4.81242L0.916626 7.79159" stroke="#31BA9C" strokeWidth="0.916667" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M7.33337 3.20825H10.0834V5.95825" stroke="#31BA9C" strokeWidth="0.916667" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
           
            +1.8%
