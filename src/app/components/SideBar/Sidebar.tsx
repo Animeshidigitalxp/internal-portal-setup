@@ -47,10 +47,10 @@ const sidebarItems: SidebarItem[] = [
     exists: true,
   },
   {
-    name: 'Order / Queue',
-    path: `/order-queue`,
+    name: 'Sales Orders',
+    path: `/sales-orders`,
     icon: orderqueue.src,
-    ogpath: '/order-queue',
+    ogpath: '/sales-orders',
     exists: true,
   },
   {

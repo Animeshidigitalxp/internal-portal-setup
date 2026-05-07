@@ -1,0 +1,97 @@
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 1.4rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.cardHeaderTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #20242F;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  gap: 1rem;
+  flex-wrap: wrap;
+  transition: background 0.15s;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover {
+  background: #f9fafb;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.productName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #20242F;
+}
+
+.productMeta {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.rightGroup {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-shrink: 0;
+}
+
+.matchBadge {
+  display: inline-flex;
+  align-items: center;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.selectBtn {
+  background: transparent;
+  border: 1.5px solid #1275B3;
+  color: #1275B3;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.selectBtn:hover {
+  background: #1275B3;
+  color: #fff;
+}

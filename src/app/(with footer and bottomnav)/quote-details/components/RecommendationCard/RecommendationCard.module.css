@@ -1,0 +1,216 @@
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 1.6rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cardHeaderIcon {
+  font-size: 1.8rem;
+}
+
+.cardHeaderTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #20242F;
+}
+
+.cardBody {
+  padding: 2rem;
+}
+
+/* Product hero row */
+.productRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.productLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #20242F;
+  margin: 0;
+}
+
+.productSku {
+  font-size: 1.2rem;
+  color: #9ca3af;
+}
+
+.matchBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #fff7ed;
+  border: 1.5px solid #fed7aa;
+  color: #c2410c;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.matchLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #9ca3af;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+/* Specs grid */
+.specsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+  background: #f9fafb;
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem;
+  padding: 1.6rem;
+}
+
+.specItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.specLabel {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.specValue {
+  font-size: 1.3rem;
+  color: #20242F;
+  font-weight: 500;
+}
+
+/* Price & stock row */
+.priceStockRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.8rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.priceBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.priceLabel {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.priceValue {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1E1D50;
+}
+
+.priceUnit {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.stockGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stockBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+  border-radius: 2rem;
+}
+
+.stockDot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: #10b981;
+  border-radius: 50%;
+}
+
+.shippingText {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* Why This Device */
+.reasoningBox {
+  border-left: 3px solid #1275B3;
+  background: #eff6ff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+  margin-bottom: 1.4rem;
+}
+
+.reasoningTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1275B3;
+  margin-bottom: 0.6rem;
+}
+
+.reasoningText {
+  font-size: 1.3rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Upgrade note */
+.upgradeNote {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #e6faf4;
+  border: 1px solid #a7f3d0;
+  border-radius: 0.8rem;
+  padding: 1.1rem 1.4rem;
+  font-size: 1.2rem;
+  color: #1a8a70;
+  font-weight: 500;
+}
+
+.upgradeIcon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}

@@ -1,0 +1,153 @@
+.container {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.2rem;
+  padding: 2rem 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.8rem;
+}
+
+.stepsRow {
+  display: flex;
+  align-items: flex-start;
+}
+
+.stepWrapper {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.stepTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.circleRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.circle {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: #31BA9C;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.circleActive {
+  background: #1E1D50;
+  box-shadow: 0 0 0 4px rgba(49, 186, 156, 0.25);
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background: #31BA9C;
+}
+
+.stepCard {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.2rem 1.4rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.stepCardActive {
+  background: #e6faf4;
+  border-color: #31BA9C;
+}
+
+.stepName {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #20242F;
+  margin-bottom: 0.4rem;
+}
+
+.stepNameActive {
+  color: #1a8a70;
+}
+
+.stepDetail {
+  font-size: 1.2rem;
+  color: #374151;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.stepMeta {
+  font-size: 1.1rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+  .stepsRow {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stepWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .step {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 1.2rem;
+  }
+
+  .stepTop {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .circleRow {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .line {
+    width: 2px;
+    height: 3rem;
+    flex: none;
+  }
+
+  .stepCard {
+    margin-top: 0;
+    flex: 1;
+  }
+}
