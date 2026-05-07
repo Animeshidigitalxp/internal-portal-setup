@@ -66,15 +66,11 @@ const Navbar = (props: NavbarProps) => {
         <div className={styles.logoSection}>
 
 
-          <a href="/" className={styles.logo}>
+          <Link href="/" className={styles.logo} suppressHydrationWarning>
              <img className={` mr-3 ${styles.mobile} ${styles.brandLogoImgIcon}`} alt="brand logo"
               src={minimarty.src} />
-            {/* <img className={`align-top ${styles.desktop} ${styles.brandLogoImg}`} alt="brand logo"
-              src={minimarty.src} />  */}
-              {/* {minimarty.src} */}
-              <span className='exo_semibold_blue_16px'>Mini Marty</span>
-            {/* Mini Marty */}
-          </a>
+              <span className='exo_semibold_blue_16px' suppressHydrationWarning>Mini Marty</span>
+          </Link>
         </div>
 
         {/* Search Section */}

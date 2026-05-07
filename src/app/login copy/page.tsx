@@ -6,7 +6,7 @@ export default async function Login() {
 
   const logoSvgData = <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M0 4C0 1.79086 1.79086 0 4 0H32C34.2091 0 36 1.79086 36 4V32C36 34.2091 34.2091 36 32 36H4C1.79086 36 0 34.2091 0 32V4Z" fill="white"/>
-<path d="M29.0002 24.608L28.5871 24.8307L18.3723 30.3307L18.0002 30.5309L17.6272 30.3307L7.41331 24.8307L6.99925 24.608V8.42932L8.13694 8.99768L17.9992 13.9293L27.8625 8.99768L29.0002 8.42932V24.608Z" fill="url(#paint0_linear_35_1133)" stroke="url(#paint1_linear_35_1133)" stroke-width="1.57145"/>
+<path d="M29.0002 24.608L28.5871 24.8307L18.3723 30.3307L18.0002 30.5309L17.6272 30.3307L7.41331 24.8307L6.99925 24.608V8.42932L8.13694 8.99768L17.9992 13.9293L27.8625 8.99768L29.0002 8.42932V24.608Z" fill="url(#paint0_linear_35_1133)" stroke="url(#paint1_linear_35_1133)" strokeWidth="1.57145"/>
 <path d="M17.9995 18.7857L12.4994 15.6428V22.7143L17.9995 25.8572L23.4996 22.7143V15.6428L17.9995 18.7857Z" fill="url(#paint2_linear_35_1133)"/>
 <defs>
 <linearGradient id="paint0_linear_35_1133" x1="17.9998" y1="7.63828" x2="17.9998" y2="29.6386" gradientUnits="userSpaceOnUse">
