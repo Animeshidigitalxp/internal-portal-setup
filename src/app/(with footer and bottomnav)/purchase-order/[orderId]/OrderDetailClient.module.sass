@@ -1,0 +1,19 @@
+.wrapper
+  display: flex
+  flex-direction: column
+  gap: 12px
+  padding: 0 1.5rem 2rem
+
+.mainGrid
+  display: grid
+  grid-template-columns: 1fr 553px
+  gap: 16px
+  align-items: start
+
+@media (max-width: 1024px)
+  .mainGrid
+    grid-template-columns: 1fr 260px
+
+@media (max-width: 768px)
+  .mainGrid
+    grid-template-columns: 1fr

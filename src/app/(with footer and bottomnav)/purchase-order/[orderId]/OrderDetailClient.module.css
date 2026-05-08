@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 1.5rem 2rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

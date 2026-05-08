@@ -1,0 +1,39 @@
+.banner
+  display: flex
+  align-items: flex-start
+  gap: 10px
+  padding: 10px 16px
+  border-radius: 4px
+  border: 1px solid var(--banner-border)
+  background: var(--banner-bg)
+
+  &[data-type="warning"]
+    --banner-bg: #FFFBEB
+    --banner-border: #FCD34D
+    --icon-color: #F59E0B
+    --text-color: #92400E
+    --sub-color: #B45309
+
+  &[data-type="error"]
+    --banner-bg: #FEF2F2
+    --banner-border: #FECACA
+    --icon-color: #DC2626
+    --text-color: #991B1B
+    --sub-color: #B91C1C
+
+.icon
+  flex-shrink: 0
+  margin-top: 1px
+
+.iconCircle
+  fill: var(--icon-color)
+
+.message
+  font-size: 14px
+  font-weight: 500
+  color: #F6BB06
+
+.subText
+  font-size: 11px
+  color: #00000080
+  margin-top: 4px

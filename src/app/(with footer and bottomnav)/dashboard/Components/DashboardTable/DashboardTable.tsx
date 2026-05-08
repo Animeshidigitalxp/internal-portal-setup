@@ -19,6 +19,7 @@ export type DashboardTableProps<T extends Record<string, unknown>> = {
   columns: ColumnDef<T>[];
   rows: T[];
   className?: string;
+  onRowClick?: (row: T, index: number) => void;
 };
 
 export const StatusBadge = ({ status }: { status: string }) => {
@@ -40,6 +41,7 @@ function DashboardTable<T extends Record<string, unknown>>({
   columns,
   rows,
   className,
+  onRowClick,
 }: DashboardTableProps<T>) {
   return (
     <div className={`${styles.container} ${className ?? ""}`}>
@@ -68,7 +70,12 @@ function DashboardTable<T extends Record<string, unknown>>({
 
           <tbody>
             {rows.map((row, rowIdx) => (
-              <tr key={rowIdx} className={styles.tr}>
+              <tr
+                key={rowIdx}
+                className={styles.tr}
+                onClick={onRowClick ? () => onRowClick(row, rowIdx) : undefined}
+                style={{ cursor: onRowClick ? 'pointer' : undefined }}
+              >
                 {columns.map((col) => {
                   const raw = row[col.key as keyof T];
                   return (

@@ -1,0 +1,72 @@
+.card
+  background: #fff
+  border: 1px solid #E3E3E3
+  border-radius: 4px
+  padding: 17px
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 28px
+
+.title
+
+.updatedAt
+
+
+// ── Step row ──────────────────────────────────────────────────
+.stepsRow
+  display: flex
+  align-items: flex-start
+
+.stepWrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  flex: 1
+
+// ── Circle row (line · circle · line) ─────────────────────────
+.circleRow
+  display: flex
+  align-items: center
+  width: 100%
+
+.line
+  height: 2px
+  flex: 1
+  background: #d1d5db
+
+  &[data-active="true"]
+    background: #31BA9C
+
+  &[data-hidden="true"]
+    visibility: hidden
+
+// ── Labels below circle ───────────────────────────────────────
+.stepInfo
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 4px
+  margin-top: 8px
+
+  &[data-status="error"]
+    .label, .date, .subLabel
+      color: #DC2626
+
+  &[data-status="pending"]
+    .label
+      color: #9ca3af
+
+.label
+  text-align: center
+  white-space: nowrap
+
+.date
+  text-align: center
+  white-space: nowrap
+
+.subLabel
+  text-align: center
+  white-space: nowrap

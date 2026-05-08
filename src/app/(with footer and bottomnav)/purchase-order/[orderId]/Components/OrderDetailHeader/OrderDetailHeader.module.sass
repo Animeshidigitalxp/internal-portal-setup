@@ -1,0 +1,119 @@
+.breadcrumb
+  display: flex
+  align-items: center
+  gap: 6px
+  padding: 12px 16px
+  margin-bottom: 16px
+  font-size: 13px
+  background-color: #EBF9F5
+
+.breadcrumbLink
+  color: #31BA9C
+  text-decoration: none
+  font-weight: 500
+
+.breadcrumbSep
+  color: #9ca3af
+
+.breadcrumbCurrent
+  color: #374151
+  font-weight: 500
+
+.headerRow
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  flex-wrap: wrap
+  gap: 12px
+
+.poNumber
+  margin: 12px 0 2px
+
+.deviceInfo
+  margin: 0 0 10px
+
+.badges
+  display: flex
+  align-items: center
+  gap: 8px
+  flex-wrap: wrap
+
+// ── Status badge ─────────────────────────────────────────────
+.badge
+  display: inline-block
+  padding: 4px 8px
+  border-radius: 4px
+  font-size: 12.5px
+  font-weight: 500
+  white-space: nowrap
+
+  &[data-variant="shipped"]
+    color: #00000080
+    background: #EBEAEA80
+    border: 1px solid #e5e7eb
+
+  &[data-variant="processing"]
+    color: #F6BB06
+    background: #F6BB061A
+
+  &[data-variant="placed"]
+    color: #5AC3F0
+    background: #5AC3F01A
+
+  &[data-variant="delivered"]
+    color: #31BA9C
+    background: #31BA9C1A
+
+  &[data-variant="on-track"]
+    color: #31BA9C
+    background: #31BA9C1A
+
+  &[data-variant="at-risk-24h"]
+    color: #F6BB06
+    background: #F6BB061A
+
+  &[data-variant="delayed-48h"]
+    color: #DC2626
+    background: #DC26261A
+
+  &[data-variant="default"]
+    color: #6b7280
+    background: #f3f4f6
+
+// ── Halo tag ─────────────────────────────────────────────────
+.haloTag
+  display: inline-flex
+  align-items: center
+  gap: 4px
+  padding: 4px 8px
+  border-radius: 4px
+  font-size: 12.5px
+  color: #00000080
+  background: #EBEAEA80
+  border: 1px solid #e5e7eb
+  white-space: nowrap
+
+// ── Action buttons ────────────────────────────────────────────
+.actions
+  display: flex
+  gap: 10px
+  flex-shrink: 0
+  align-items: center
+
+.btnOutline
+  padding: 17px 18px
+  border-radius: 50px
+  border: 1.5px solid #d1d5db
+  background: #fff
+  width: 180px
+  cursor: pointer
+  white-space: nowrap
+
+.btnFilled
+  padding: 17px 18px
+  border-radius: 50px
+  border: none
+  width: 180px
+  background: #111827
+  cursor: pointer
+  white-space: nowrap
